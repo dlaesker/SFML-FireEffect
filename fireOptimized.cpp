@@ -61,7 +61,8 @@ int main(){
 		// Hue goes from 0 to 85: red to yellow
 		// Saturation is always the maximum: 255
 		// Lightness is 0..255 for x=0..128, and 255 for x=128..255
-		palette.push_back(HSLtoRGB(x / 3, 255, std::min(255, x * 2)));
+		palette.push_back(HSLtoRGB(x / 3, 255, std::min(255, x * 2))); // Red
+//		palette.push_back(HSLtoRGB(170 + rand() % (255 - 170), 255, std::min(255, x * 2)));	// Blue
   }
 	
 	sf::Event event;
